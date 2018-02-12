@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Sass example</title>
+    <script src="./js/angular.js"></script>
+    <script src="./js/app.js"></script>
+    <link rel="stylesheet" href="./style/bootstrap/css/bootstrap.css">
+    <link rel="stylesheet" href="./style/css/index.css">    
+    </head>
+    <body ng-app="myApp" ng-controller="myc">
+        <div class="col-lg-2"></div>
+        <div class="out container-fluid col-lg-6 ">
+            <div class="headfoot onlyhead" >
+                <div class="imagehead">
+                    <img height=80px width=80px src="./user.png">
+                </div>
+                <p class="tophead font-weight-bold text-center">
+                    Notification
+                </p>
+            </div>
+            <div class="row">
+            <div class="col-lg-2"></div>
+            <div class="col-lg-8 middlecontent">
+                    <p>Hello {{name}},</p>
+                    
+                    Your license key for {{product_name}} is expiring within 30 days. It is time to renew and save 30% off of the original price.
+                    
+                    It is important to keep your license up to date in order to continue getting updates for {{product_name}} and continued support.
+                    
+                    If you wish to renew your license, simply click the link below and follow the instructions.
+                    <p>
+                        Your license expires on: {{expiration}}.
+                    </p>
+                    <p>
+                        Your expiring license key is: {{license_key}}.
+                    </p>
+                    <p> 
+                        Renew now: <a href="{unsubscribe_url}">
+                                        click here.
+                                    </a>
+                    </p>
+                    Best regards,
+                    Your Company
+                    
+                    <div>To unsubscribe from notifications for this license, 
+                        <a href="{unsubscribe_url}">
+                            click here.
+                        </a>
+                    </div>
+            
+            </div>
+            <div class="col-lg-2"></div>
+            </div>
+            <div class="headfoot onlyfoot text-center">
+                <p class="foottext">
+                    Copyright &copy; 2017 Innominds
+                </p>
+            </div>
+        </div>
+        <div class="col-lg-2"></div>
+    </body>
+</html>
